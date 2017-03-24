@@ -14,10 +14,12 @@ openexchangerates.org
 
 Since we just need to get the latest and historical exchange rate for the currency data (json format), so I choose Nodejs+MongoDB.
 
+### Model-View-Router (MVR) pattern
+
+- Express - Build the REST APIs.
+
 npm install --save express<br/>
 npm install --save babel-cli babel-preset-es2015
-
-### Model-View-Router (MVR) pattern
 
 - Consign - Autoload models, routers, middlewares, configs, and more, as this module injects dependencies easily.
 

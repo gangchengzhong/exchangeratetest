@@ -28,7 +28,7 @@ module.exports = app => {
       var password = req.body.password;
       Users.findOne({email: email})
         .then(user => {
-          if (bcrypt.compareSync(user.password, password)) {
+          if (bcrypt.compareSync(password, user.password)) {
             var payload = {id: user._id};
             res.json({
               token: jwtS.encode(payload, cfg.jwtSecret)

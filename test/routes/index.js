@@ -1,3 +1,6 @@
+/**
+ * Test the Index Endpoint
+ */
 describe("Routes: Index", () => {
   describe("GET /", () => {
     it("returns the API status", done => {
