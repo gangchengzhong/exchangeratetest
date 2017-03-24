@@ -14,41 +14,41 @@ openexchangerates.org
 
 Since we just need to get the latest and historical exchange rate for the currency data (json format), so I choose Nodejs+MongoDB.
 
-npm install --save express
+npm install --save express<br/>
 npm install --save babel-cli babel-preset-es2015
 
 ### Model-View-Router (MVR) pattern
 
-Autoload models, routers, middlewares, configs, and more, as this module injects dependencies easily.
+- Consign - Autoload models, routers, middlewares, configs, and more, as this module injects dependencies easily.
 
 npm install --save consign
 
-Mongoose to connect to the MongoDB
+- Mongoose to connect to the MongoDB
 
 npm install --save mongoose
 
-JSON parse
+- JSON parse
 
 npm install --save body-parser
 
 ### Authenticating Users
 
-• Passport: This will be used as the authentication engine.
-• Passport JWT: This is the JWT authentication strategy for Passport.
-• JWT Simple: This is used as encoder and decoder JSON tokens.
+- Passport: This will be used as the authentication engine.
+- Passport JWT: This is the JWT authentication strategy for Passport.
+- JWT Simple: This is used as encoder and decoder JSON tokens.
 
 npm install --save passport passport-jwt jwt-simple
 
-Encryption of user passwords
+- Encryption of user passwords
 
 npm install --save bcrypt
 
 
 ### Test
 
-• babel-register: To run ES6 codes.
-• mocha: To run the tests.
-• chai: To write BDD tests.
-• supertest: To execute some requests in the API.
+- babel-register: To run ES6 codes.
+- mocha: To run the tests.
+- chai: To write BDD tests.
+- supertest: To execute some requests in the API.
 
 npm install babel-register mocha chai supertest --save-dev
