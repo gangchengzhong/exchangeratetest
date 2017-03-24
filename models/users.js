@@ -1,3 +1,6 @@
+/**
+ * Initialize User model
+ */
 module.exports = app => {
 	var Schema = app.db.Schema;
 	// create user schema

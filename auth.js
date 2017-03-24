@@ -1,3 +1,6 @@
+/**
+ * Authenticating Users
+ */
 const passport = require("passport");
 const jwt = require("passport-jwt");
 const cfg = require("./libs/config.js");

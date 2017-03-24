@@ -50,3 +50,20 @@ Since we just need to get the latest and historical exchange rate for the curren
 ### API Documentation
 
 - apidoc: Generate api documentation.
+
+### Setup
+
+- Clone this repo: git clone git@github.com:gangchengzhong/exchangeratetest.git
+- Access the folder: cd exchangeratetest
+- Install dependencies: npm install
+- Start your mongodb: mongod --dbpath "......" ......
+- Create database "exchangerate" and collections "users" and "rates"
+- Insert few test exchange rates documents (got examples from openexchangerates.org)
+- Start the server: npm start
+- Running tests: npm test
+- Accessing API Status Page: https://localhost:3000
+- Accessing Documentation: https://localhost:3000/apidoc
+
+### TODO
+
+- Thinking to build a simple SPA web or maybe use Angular, React... :)

@@ -1,3 +1,6 @@
+/**
+ * Initialize Rate model
+ */
 module.exports = app => {
 	var Schema = app.db.Schema;
 	// create rate schema
