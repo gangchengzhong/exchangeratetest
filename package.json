@@ -1,10 +1,18 @@
 {
   "name": "ExchangeRate",
   "version": "0.0.1",
-  "description": "Get Exchange Rate",
+  "description": "Exchange Rate API",
+  "main": "index.js",
   "scripts": {
-    "start": "babel-node index.js",
-    "test": "set NODE_ENV=test&& mocha test/**/*.js"
+    "start": "npm run apidoc && babel-node index.js",
+    "test": "set NODE_ENV=test&& mocha test/**/*.js",
+    "apidoc": "apidoc -i routes/ -o public/apidoc"
+  },
+  "apidoc": {
+    "name": "Exchange Rates API - Documentation",
+    "template": {
+      "forceLanguage": "en"
+    }
   },
   "dependencies": {
     "babel-cli": "^6.24.0",
@@ -12,13 +20,17 @@
     "bcrypt": "^1.0.2",
     "body-parser": "^1.17.1",
     "consign": "^0.1.2",
+    "cors": "^2.8.1",
     "express": "^4.15.2",
     "jwt-simple": "^0.5.1",
     "mongoose": "^4.9.1",
+    "morgan": "^1.8.1",
     "passport": "^0.3.2",
-    "passport-jwt": "^2.2.1"
+    "passport-jwt": "^2.2.1",
+    "winston": "^2.3.1"
   },
   "devDependencies": {
+    "apidoc": "^0.17.5",
     "babel-register": "^6.24.0",
     "chai": "^3.5.0",
     "mocha": "^3.2.0",

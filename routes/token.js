@@ -11,16 +11,16 @@ module.exports = app => {
    * @apiParam {String} email User email
    * @apiParam {String} password User password
    * @apiParamExample {json} Input
-   *    {
-   *      "email": "john@test.com",
-   *      "password": "123"
-   *    }
+   *   {
+   *     "email": "john@test.com",
+   *     "password": "123"
+   *   }
    * @apiSuccess {String} token Token of authenticated user
    * @apiSuccessExample {json} Success
-   *    HTTP/1.1 200 OK
-   *    {"token": "xxxxxx"}
+   *   HTTP/1.1 200 OK
+   *   {"token": "xxxxxx"}
    * @apiErrorExample {json} Authentication error
-   *    HTTP/1.1 401 Unauthorized
+   *   HTTP/1.1 401 Unauthorized
    */
   app.post("/token", (req, res) => {
     if (req.body.email && req.body.password) {
@@ -39,7 +39,7 @@ module.exports = app => {
         })
         .catch(error => res.sendStatus(401));
     } else {
-      res.sendStatus(401);
+        res.sendStatus(401);
     }
   });
 };
