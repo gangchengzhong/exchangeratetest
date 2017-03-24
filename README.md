@@ -27,6 +27,13 @@ Since we just need to get the latest and historical exchange rate for the curren
 - JWT Simple: Used as encoder and decoder JSON tokens.
 - bcrypt: Encryption of user passwords.
 - CORS: Access control, limit which resources a client can gain access to from another domain.
+- Secure Sockets Layer (SSL) connection via the HTTPS protocol
+- helmet: Helps to secure Express apps by setting various HTTP headers.
+
+### Performance
+
+- cluster module.
+- compression: compact the JSON responses and the entire API documentation static files into GZIP format.
 
 ### Logs
 
